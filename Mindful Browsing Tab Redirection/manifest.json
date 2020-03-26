@@ -1,0 +1,19 @@
+{
+	"manifest_version":2,
+	"name": "Mindful Browsing",
+	"version": "1.0",
+	"description": "This redirects new tabs to a mindfulness page to make sure your browsing with intention",
+	"chrome_url_overrides": {
+		 "newtab": "newtab.html"
+	},
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+		"idle",
+    "<all_urls>",
+    "tabs"
+  ]
+}
